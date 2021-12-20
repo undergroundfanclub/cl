@@ -1,0 +1,125 @@
+@media only screen and (min-width: 800px) {
+    div.index {
+        width: 14ch;
+        position: fixed;
+        border-bottom: none !important;
+        text-align: left !important;
+    }
+    div.content {
+        margin-left: 20ch;
+    }
+    .ranger {
+        display: block;
+    }
+    .filetype_link::after {
+        content: " ->";
+    }
+}
+
+body {
+    background: black;
+    color: white;
+    font-size: 120%;
+}
+div.index {
+    padding-bottom: 1em;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+div.content {
+    max-width: 90ch;
+    color: #fff;
+    font-family: monospace;
+}
+div.screenshots img, .screenshot {
+    border: 1px solid #0CC;
+    padding: 0.3em;
+    border-radius: 0.7em;
+    max-width: 100%;
+}
+div.screenshots a:hover {
+    background-color: #000 !important;
+}
+code {
+    color: #9f9;
+}
+.ranger {
+    font-family: monospace;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 1ch;
+}
+.tagged {
+    padding-left: 0ch;
+}
+.tagged::before {
+    content: "*";
+    color: #c44;
+}
+.filetype_image {
+    color: #ffbb00;
+}
+.filetype_image:hover, .filetype_image:focus {
+    color: black;
+    background-color: #ffbb00;
+}
+.filetype_text {
+    color: white;
+}
+.filetype_text:hover, .filetype_text:focus {
+    color: black;
+    background-color: white;
+}
+.filetype_directory {
+    color: #66f;
+}
+.filetype_directory:hover, .filetype_directory:focus {
+    color: black;
+    background-color: #66f;
+}
+.filetype_link {
+    color: #0CC;
+}
+.filetype_link:hover, .filetype_link:focus {
+    color: black;
+    background-color: #0CC;
+}
+.filetype_targz {
+    color: #c44;
+}
+.filetype_targz:hover, .filetype_targz:focus {
+    color: black;
+    background-color: #c44;
+}
+.content {
+    margin-bottom: 2em;
+    border-radius: 1em;
+    padding: 0 1em;
+}
+.content a {
+    color: #0CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content a:hover {
+    color: black;
+    background-color: #0CC;
+}
+.changelog h1, .news h1 {
+    border-bottom: 2pt solid #ccc;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+.metadata {
+    float: right;
+    padding: 0 0 0 0.5em;
+    color: #999;
+}
+table, td, tr, th {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+th { text-align: left }
+th, td { padding: 0.2em; }
+p, h1, h2, h3 { background: url(""); } /* android fix #40186 */
