@@ -6,5 +6,6 @@
 ref ?= HEAD
 
 build:
-	inlineswap index.html contact.html
+	inlineswap index.html contact.html posts.html
 	@echo file://$(shell pwd)/index.html
+	@echo file://$(shell pwd)/posts.html
