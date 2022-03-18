@@ -1,0 +1,43 @@
+<head>
+    <title>fixlater</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div class="index">
+        <a href="index.html"><img src="../ungder.jpg" style="max-width: 80%; max-height: 200px;" alt="Logo" /></a>
+        <br />
+        <br />
+        <a href="index.html" class="ranger filetype_text kbnav tagged">index.html</a>
+        <a href="contact.html" class="ranger filetype_text kbnav">contact.html</a>
+        <a href="posts.html" class="ranger filetype_text kbnav">posts.html</a>
+    </div>
+<div class="content">
+<div class="news">
+<div class="metadata data">2022-03-15</div>
+
+<div class="metadata author">ungder@pm.me</div>
+
+<h1>site update!</h1>
+
+<p>i've been working a long time for an update to the site. it started off as a clone of the ranger site, and while it still mostly is i am very happy with the progress made in differentiating. though doing somethings with bash made me wish that stallman was jabbed with big tech nano brain bots.  </p>
+
+<p>my main hiccup was inserting a string with a variable into a specific line of a file. I read up and down the awk and sed manuals to no success. scowered many stackoverflow threads and bothered all of my linux friends. i was constantly just pointed to using an actual language, but i said no. i stick with bash, no matter how convienant it is for me to turn to evil languages.  </p>
+
+<p>my solution while being very embarassing is still my best idea. what i came up with was a template file for everyline before i needed to insert and a template file for everything below. and i would have a simple function that would:</p>
+
+<ol>
+<li><p>cat the top template.html</p></li>
+<li><p>loop printf printing all of the hyperlinks to the pages i wanted for posts.html</p></li>
+<li><p>close the loop</p></li>
+<li><p>cat the bottom template.html</p></li>
+</ol>
+
+<p>literally sandwiching my loop. its pretty comical. im sure some wiser and or stronger linux user will point me an sed argument or gnu util, and if you reader are that person please email with address on my contact page.</p>
+
+<p>there are still some things i will hope to change incrementally in the future. notably when you open the site, the old "my last 2 posts" section will be broken. I don't think it will be that complicated too fix, especially if i learn to insert strings at certain lines. im just lazy at the moment, i will write a function later. my ultimate goal being that nothing will use inlineswap, and will just be a long bloated shell script.</p>
+
+<p>i have a lot drafts of journal posts, so i will be trickling them out this week. i just need to get school stuff done. and i won't have the exscuse of the site not being ready.  </p>
+
+<p>love to anyone who reads these early posts! stay safe, your beloved psycho freak.  </p>
+</div>
+</body>
