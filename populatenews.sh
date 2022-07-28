@@ -1,4 +1,8 @@
 #!/bin/sh
+#      _  cl | matthew beamer
+#  ___| | email: ungder@pm.me
+# |  _| | 
+# |___|_| amateur writing under GPLv3
 
 cleanupFunc () {
 for PAGES in $(ls news/ | grep .html); do
@@ -6,6 +10,7 @@ for PAGES in $(ls news/ | grep .html); do
 done
 }
 
+# on fedora markdown is under the discount package
 populateFunc () {
 for POSTS in $(ls news/ | grep .md | sed -e 's/\(.md\)*$//g'); do
     touch news/"$POSTS".html
